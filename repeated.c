@@ -28,7 +28,7 @@ int main()
 				b[k]=a[i];
 				k++;
 			}
-			
+
 		}
 	}
 		printf("%d\n",n);

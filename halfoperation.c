@@ -2,7 +2,7 @@
 int main()
 {
 	int n;
-	printf("enter the size ofthe array:");
+	printf("enter the size of the array:");
 	scanf("%d",&n);
 	int a[n],i,j,t;
 	printf("enter the element of araay you want to sort:");

@@ -19,6 +19,7 @@ int main()
 			j++;
 		}
 	}
+	printf("%d",j);
 	for(k=0;k<j;k++)
 	{
 		for(i=k+1;i<j;i++)

@@ -1,36 +1,31 @@
 #include<stdio.h>
-int main()
+void repeating_element(int arr[], int n)
 {
-	int n,c=0;
-	printf("enter the size of the array:");
-	scanf("%d",&n);
-	int a[n],b[n],s=0,i,j,t,m;
-	printf("enter the elements of the array:");
-	for(i=0;i<n;i++)
+	int i, j;
+	int count = 0;
+	printf("Repeating elements are: ");
+	for(i = 0;i < n;i++)
 	{
-		scanf("%d",&a[i]);
-	}
-	for(i=0;i<n;i++)
-	{
-		if(a[i]!=-1)
+		for(j = i+1;j < n;j++)
 		{
-			c=1;
-			for(j=i+1;j<n;j++)
+			if(arr[i] == arr[j])
 			{
-				if(a[i]==a[j])
-				{
-					a[j]=-1;
-				}
+				printf("%d ", arr[j]);
 			}
 		}
 	}
-	printf("Unique elements of the array");
-	for(i=0;i<n;i++)
+}
+int main()
+{
+	int n;
+	scanf("%d",&n);
+	int arr[n];
+	int i;
+	for(i = 0; i < n; i++)
 	{
-		if(a[i]!=-1)
-		{
-			printf("%d ",a[i]);
-		}
+		scanf("%d",&arr[i]);
 	}
+	repeating_element(arr,n);
 	return 0;
 }
+

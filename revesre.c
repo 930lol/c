@@ -10,18 +10,10 @@ int main()
 	{
 		scanf("%d",&a[i]);
 	}
-	for(i=0;i<n;i++)
+	for(i=n-1;i>=0;i--)
 	{
-		for(j=i+1;j<n;j++)
-		{
-			if(a[i]>a[j])
-			{
-				t=a[i];
-				a[i]=a[j];
-				a[j]=t;
-			}
-		}
+		printf("%d ",a[i]);
 	}
-	printf("%d is the smallest elements ofthe array",a[n-1]);
+	//printf("%d is the smallest elements ofthe array",a[0]);
 	return 0;
 }

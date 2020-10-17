@@ -10,12 +10,10 @@ int main()
 		if(r==0)
 		{
 			s=s*b+o;
-		//	b=b*10;
 		}
 		else
 		{
 			s=s*b+r;
-		//	b=b*10;
 		}
 		n=n/10;
 	}
